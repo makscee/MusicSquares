@@ -8,4 +8,17 @@ public class BlockVisuals
     {
         
     }
+
+    public void Destroy()
+    {
+        Object.Destroy(modelBase.gameObject);
+    }
+
+    public void Refresh()
+    {
+        if (modelBase != null)
+        {
+            modelBase.isDirty = true;
+        }
+    }
 }
